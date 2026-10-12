@@ -40,3 +40,6 @@ Thumbs.db
 .idea/
 .vscode/
 *.swp
+
+# Isolated dependency installs (reproducible with npm install)
+whatsapp-bot/vendor/
