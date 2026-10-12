@@ -1,0 +1,42 @@
+# ---------------------------------------------------------------------------
+# NEVER COMMIT THESE
+# ---------------------------------------------------------------------------
+
+# WhatsApp session credentials. auth/ IS the linked device: committing it hands
+# anyone with repo access full control of the paired WhatsApp account.
+whatsapp-bot/auth/
+whatsapp-bot/auth.dead-*/
+whatsapp-bot/sessions/
+whatsapp-bot/sessions.dead-*/
+
+# Runtime state and logs
+whatsapp-bot/logs/
+whatsapp-bot/*.log
+whatsapp-bot/tmp/
+whatsapp-bot/.stdin.fifo
+whatsapp-bot/database/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+gh-token-*
+
+# Dependencies and build output
+node_modules/
+**/node_modules/
+dist/
+build/
+out/
+*.tsbuildinfo
+__pycache__/
+*.pyc
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
